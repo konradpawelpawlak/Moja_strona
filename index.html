@@ -3,19 +3,500 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konrad Pawlak – Specjalista Excel</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Konrad Pawlak - Excel Expert | Automatyzacja i Szkolenia</title>
+    <meta name="description" content="Specjalista ds. automatyzacji w Excelu. Oferuję szkolenia, consulting i rozwiązania VBA dla firm i osób prywatnych.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <h1>Konrad Pawlak</h1>
-        <h2>Specjalista od Excela</h2>
-        <p>Zajmuję się automatyzacją pracy w Excelu oraz uczę, jak skutecznie korzystać z tego narzędzia w codziennej pracy.</p>
-
-        <div class="contact">
-            <p>Email: konrad@example.com</p>
-            <p>Telefon: +48 123 456 789</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">📊</div>
+                <span class="logo-text">Konrad Pawlak</span>
+                <span class="logo-subtitle">Excel Expert</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Start</a>
+                <a href="#about" class="nav-link">O mnie</a>
+                <a href="#services" class="nav-link">Usługi</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Opinie</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✨ Ekspert Excel & VBA</span>
+                </div>
+                <h1 class="hero-title">
+                    Automatyzuję Twoją pracę w 
+                    <span class="excel-text">Excelu</span>
+                </h1>
+                <p class="hero-description">
+                    Specjalizuję się w automatyzacji procesów biznesowych przy użyciu Excela i VBA. 
+                    Pomagam firmom i osobom prywatnym oszczędzać czas poprzez inteligentne rozwiązania.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Zadowolonych klientów</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Zautomatyzowanych procesów</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5 lat</span>
+                        <span class="stat-label">Doświadczenia</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Skontaktuj się</a>
+                    <a href="#portfolio" class="btn btn-secondary">Zobacz portfolio</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="excel-mockup">
+                    <div class="excel-header">
+                        <div class="excel-tabs">
+                            <div class="excel-tab active">Automatyzacja</div>
+                            <div class="excel-tab">Raporty</div>
+                            <div class="excel-tab">Dashboard</div>
+                        </div>
+                    </div>
+                    <div class="excel-grid">
+                        <div class="excel-cell header">A</div>
+                        <div class="excel-cell header">B</div>
+                        <div class="excel-cell header">C</div>
+                        <div class="excel-cell header">D</div>
+                        <div class="excel-cell">Dane</div>
+                        <div class="excel-cell">Analiza</div>
+                        <div class="excel-cell">Automatyzacja</div>
+                        <div class="excel-cell positive">+150%</div>
+                        <div class="excel-cell">Czas</div>
+                        <div class="excel-cell">Oszczędności</div>
+                        <div class="excel-cell">Efektywność</div>
+                        <div class="excel-cell positive">+200%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>O mnie</h2>
+                <p>Poznaj moją historię i doświadczenie</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Cześć! Jestem Konrad 👋</h3>
+                    <p>
+                        Od ponad 5 lat zajmuję się automatyzacją pracy w Excelu oraz szkolę ludzi, 
+                        jak skutecznie korzystać z tego potężnego narzędzia. Moja pasja to przekształcanie 
+                        żmudnych, powtarzalnych zadań w inteligentne, zautomatyzowane procesy.
+                    </p>
+                    <p>
+                        Współpracowałem z dziesiątkami firm z różnych branż - od małych przedsiębiorstw 
+                        po duże korporacje. Każdy projekt to dla mnie nowe wyzwanie i możliwość 
+                        stworzenia czegoś unikalnego.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🔧</div>
+                            <h4>VBA & Makra</h4>
+                            <p>Zaawansowana automatyzacja procesów</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📊</div>
+                            <h4>Dashboard & Raporty</h4>
+                            <p>Interaktywne pulpity i analizy</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎓</div>
+                            <h4>Szkolenia</h4>
+                            <p>Przekazywanie wiedzy i doświadczenia</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💡</div>
+                            <h4>Consulting</h4>
+                            <p>Optymalizacja procesów biznesowych</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Moje usługi</h2>
+                <p>Kompleksowe rozwiązania Excel dla Twojego biznesu</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Automatyzacja procesów</h3>
+                    <p>Tworzę makra i skrypty VBA, które automatyzują powtarzalne zadania, oszczędzając Ci dziesiątki godzin pracy miesięcznie.</p>
+                    <ul class="service-features">
+                        <li>Makra VBA</li>
+                        <li>Automatyczne raporty</li>
+                        <li>Przetwarzanie danych</li>
+                        <li>Integracja z systemami</li>
+                    </ul>
+                    <div class="service-price">Od 500 PLN</div>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-badge">Najpopularniejsze</div>
+                    <div class="service-icon">📈</div>
+                    <h3>Dashboard & Raporty</h3>
+                    <p>Projektuję interaktywne pulpity i raporty, które prezentują Twoje dane w przejrzysty i profesjonalny sposób.</p>
+                    <ul class="service-features">
+                        <li>Interaktywne dashboardy</li>
+                        <li>Wykresy i wizualizacje</li>
+                        <li>KPI i metryki</li>
+                        <li>Raporty do druku</li>
+                    </ul>
+                    <div class="service-price">Od 800 PLN</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Szkolenia Excel</h3>
+                    <p>Prowadzę szkolenia indywidualne i grupowe, dopasowane do poziomu i potrzeb uczestników.</p>
+                    <ul class="service-features">
+                        <li>Szkolenia podstawowe</li>
+                        <li>Zaawansowane funkcje</li>
+                        <li>VBA dla początkujących</li>
+                        <li>Analiza danych</li>
+                    </ul>
+                    <div class="service-price">Od 200 PLN/h</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <p>Przykłady moich realizacji</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>System zarządzania magazynem</h4>
+                            <p>Kompletny system VBA do zarządzania stanem magazynowym</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>System magazynowy</h4>
+                        <p>Automatyzacja całego procesu zarządzania magazynem dla firmy logistycznej</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">VBA</span>
+                            <span class="tag">Automatyzacja</span>
+                            <span class="tag">Raporty</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>Dashboard finansowy</h4>
+                            <p>Interaktywny pulpit do monitorowania KPI finansowych</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Dashboard finansowy</h4>
+                        <p>Zaawansowany dashboard z wykresami i metrykami dla działu finansowego</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Dashboard</span>
+                            <span class="tag">Wykresy</span>
+                            <span class="tag">KPI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>Kalkulator kosztów</h4>
+                            <p>Narzędzie do automatycznego obliczania kosztów projektów</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Kalkulator projektowy</h4>
+                        <p>Inteligentne narzędzie do wyceny i kalkulacji kosztów projektów</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Kalkulacje</span>
+                            <span class="tag">Formularze</span>
+                            <span class="tag">Automatyzacja</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Co mówią klienci</h2>
+                <p>Opinie o mojej pracy</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Konrad stworzył dla nas system, który zaoszczędził nam 15 godzin pracy tygodniowo. Profesjonalne podejście i świetna komunikacja."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <h4>Anna Mazur</h4>
+                            <span>Dyrektor finansowy, TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Szkolenie z Excela przewyższyło moje oczekiwania. Konrad potrafi w prosty sposób wytłumaczyć skomplikowane zagadnienia."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PK</div>
+                        <div class="author-info">
+                            <h4>Piotr Kowalski</h4>
+                            <span>Analityk biznesowy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Dashboard, który zaprojektował Konrad, całkowicie zmienił sposób, w jaki analizujemy nasze dane. Polecam!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MN</div>
+                        <div class="author-info">
+                            <h4>Maria Nowak</h4>
+                            <span>Kierownik sprzedaży</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skontaktuj się ze mną</h2>
+                <p>Porozmawiajmy o Twoim projekcie</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Napisz do mnie</h3>
+                    <p>Masz projekt do zrealizowania? Chcesz się czegoś nauczyć? Skontaktuj się ze mną - odpowiem w ciągu 24 godzin.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:konrad@example.com">konrad@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <a href="tel:+48123456789">+48 123 456 789</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="#" target="_blank">linkedin.com/in/konradpawlak</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Lokalizacja</h4>
+                            <span>Łódź, Polska</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Rodzaj usługi</label>
+                        <select id="service" name="service" required>
+                            <option value="">Wybierz usługę</option>
+                            <option value="automatyzacja">Automatyzacja procesów</option>
+                            <option value="dashboard">Dashboard & Raporty</option>
+                            <option value="szkolenie">Szkolenie Excel</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="inne">Inne</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Opisz swój projekt lub pytanie..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <div class="logo-icon">📊</div>
+                        <span>Konrad Pawlak - Excel Expert</span>
+                    </div>
+                    <p>Automatyzacja pracy w Excelu dla nowoczesnych firm</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 Konrad Pawlak. Wszystkie prawa zastrzeżone.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation link highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Dziękuję za wiadomość! Odpowiem w ciągu 24 godzin.');
+            this.reset();
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections and cards for animations
+        document.querySelectorAll('section, .service-card, .portfolio-item, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
