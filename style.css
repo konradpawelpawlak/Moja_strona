@@ -1,34 +1,215 @@
+/* Reset i podstawowe style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --excel-green: #217346;
+    --excel-dark-green: #0f5132;
+    --excel-light-green: #e8f5e8;
+    --excel-accent: #28a745;
+    --text-dark: #1a1a1a;
+    --text-medium: #4a4a4a;
+    --text-light: #6c757d;
+    --background-light: #f8f9fa;
+    --background-white: #ffffff;
+    --border-light: #e9ecef;
+    --shadow-light: 0 2px 10px rgba(0,0,0,0.05);
+    --shadow-medium: 0 4px 20px rgba(0,0,0,0.1);
+    --shadow-heavy: 0 8px 30px rgba(0,0,0,0.15);
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-white);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: var(--shadow-light);
+    border-bottom-color: var(--border-light);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.logo-icon {
+    font-size: 24px;
+    background: linear-gradient(135deg, var(--excel-green), var(--excel-accent));
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
 }
 
-.card {
-    background: white;
-    padding: 2em;
+.logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.logo-subtitle {
+    font-size: 12px;
+    color: var(--excel-green);
+    font-weight: 500;
+    background: var(--excel-light-green);
+    padding: 2px 8px;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    max-width: 400px;
-    text-align: center;
+    margin-left: -8px;
 }
 
-h1 {
-    margin-bottom: 0.3em;
+.nav-menu {
+    display: flex;
+    gap: 8px;
+    list-style: none;
 }
 
-p {
-    margin-top: 0.5em;
-    line-height: 1.6;
+.nav-link {
+    text-decoration: none;
+    color: var(--text-medium);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: var(--transition);
+    position: relative;
 }
 
-.contact {
-    margin-top: 1.5em;
-    font-size: 0.9em;
-    color: #555;
+.nav-link:hover,
+.nav-link.active {
+    color: var(--excel-green);
+    background: var(--excel-light-green);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background: var(--text-dark);
+    margin: 3px 0;
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e9ecef" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>') repeat;
+    opacity: 0.5;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    animation: fadeInUp 1s ease;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--excel-light-green);
+    color: var(--excel-green);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    border: 1px solid rgba(33, 115, 70, 0.2);
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--text-dark);
 }
